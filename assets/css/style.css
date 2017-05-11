@@ -64,13 +64,20 @@ nav {
 	z-index: -1;
 }
 
+.menu:before{
+	top: -8px;
+}
+
+.menuj:after{
+	top:8px;
+}
+
 #toggle:hover .menu:before{
 	top: -9px;
 }
 #toggle:hover .menu:after{
 	top: 9px;
 }
-
 
 .open .menu{
 	background: none !important;
@@ -110,17 +117,6 @@ nav.open{
 	-o-transition: none;
 	-moz-transition: none;
 	-webkit-transition: none;
-}
-
-
-
-
-.menu:before {
-	top: -8px;
-}
-
-.menu:after {
-	top: 8px;
 }
 
 nav ul {
@@ -163,4 +159,22 @@ nav.open ul li{
 	color: #fff;
 	front-size: 60px;
 	visibility: visible !important;
+}
+
+nav.header-in{
+	background-color:rgba(217,40,130,0.9);
+}
+
+.solid #toggle .menu {
+	background: #fff;
+}
+.solid #toggle .menu:after{
+	background-color: #fff;
+}
+.solid #toggle .menu:before{
+	background-color: #fff;
+}
+
+nav.solid #logo .logo {
+	background-image: url(../../img.png);
 }
